@@ -1,19 +1,22 @@
-header{
-    background-color: #0a2a36;
-    color: white;
-    display: flex;
-    justify-content: center;
-    h3{
-        margin-top: 50px;
-    }
+header {
+  background-color: #0a2a36;
+  color: white;
+  display: flex;
+  justify-content: center;
+  h3 {
+    margin-top: 50px;
+  }
 }
 section {
-    margin: 0;
+  margin: 0;
   background-color: #0a2a36;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px){
+    height: 100px;
+  }
   h3 {
     color: white;
   }
@@ -41,12 +44,15 @@ section {
     background-color: #e69d4a;
     color: white;
     font-weight: bold;
+    @media screen and (max-width: 768px) {
+      padding: 0 5px 0 5px;
+    }
   }
 }
 .new-card {
-    position: absolute;
-    right: 25%;
-    flex-direction: column;
+  position: absolute;
+  right: 25%;
+  flex-direction: column;
   .line {
     display: flex;
     flex-direction: row;
@@ -56,34 +62,42 @@ section {
     border-radius: 5px;
     padding: 15px;
     width: 850px;
-    @media screen and (max-width: 768px){
-        display: block;
-        width: 250px;
+    @media screen and (max-width: 768px) {
+      display: block;
+      width: 250px;
     }
-    @media screen and (min-width: 992px){
-        display: block;
-        width: 650px;
+    @media screen and (min-width: 992px) {
+      display: block;
+      width: 650px;
     }
-    @media screen and (max-width: 992px) and (min-width: 768px){
-        display: block;
-        width: 450px;
+    @media screen and (max-width: 992px) and (min-width: 768px) {
+      display: block;
+      width: 450px;
     }
   }
-  p{
+  p {
     font-size: larger;
     font-weight: bold;
   }
-    .update {
-      background-color: #1b591b;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0 0 5px #1b591b;
-      margin: 0 5px 0 5px;
-    }
-    .delete {
-      background-color: #bd4040;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0 0 5px #bd4040;
+  .update {
+    background-color: #1b591b;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #1b591b;
+    margin: 0 5px 0 5px;
+    @media screen and (max-width: 768px) {
+      color: white;
+      font-weight: bold;
     }
   }
+  .delete {
+    background-color: #bd4040;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #bd4040;
+    @media screen and (max-width: 768px) {
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
