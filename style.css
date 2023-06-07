@@ -1,0 +1,102 @@
+header {
+  background-color: #0a2a36;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+header h3 {
+  margin-top: 50px;
+}
+
+section {
+  margin: 0;
+  background-color: #0a2a36;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section h3 {
+  color: white;
+}
+section input[type=text],
+section button {
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+  outline: 0;
+  margin: 10px;
+}
+section input[type=text] {
+  width: 250px;
+  background-color: #557787;
+  color: white;
+  font-weight: bold;
+}
+section input[type=text]::-moz-placeholder {
+  color: white;
+  opacity: 0.5;
+  font-weight: bold;
+}
+section input[type=text]::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-weight: bold;
+}
+section button {
+  background-color: #e69d4a;
+  color: white;
+  font-weight: bold;
+}
+
+.new-card {
+  position: absolute;
+  right: 25%;
+  flex-direction: column;
+}
+.new-card .line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px;
+  box-shadow: 0 0 5px black;
+  border-radius: 5px;
+  padding: 15px;
+  width: 850px;
+}
+@media screen and (max-width: 768px) {
+  .new-card .line {
+    display: block;
+    width: 250px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .new-card .line {
+    display: block;
+    width: 650px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .new-card .line {
+    display: block;
+    width: 450px;
+  }
+}
+.new-card p {
+  font-size: larger;
+  font-weight: bold;
+}
+.new-card .update {
+  background-color: #1b591b;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #1b591b;
+  margin: 0 5px 0 5px;
+}
+.new-card .delete {
+  background-color: #bd4040;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #bd4040;
+}/*# sourceMappingURL=style.css.map */
