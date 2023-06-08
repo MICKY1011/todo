@@ -1,5 +1,4 @@
 header {
-  background-color: #0a2a36;
   color: white;
   display: flex;
   justify-content: center;
@@ -10,7 +9,6 @@ header h3 {
 
 section {
   margin: 0;
-  background-color: #0a2a36;
   height: 200px;
   display: flex;
   flex-wrap: wrap;
@@ -123,4 +121,10 @@ section button {
     color: white;
     font-weight: bold;
   }
+}
+
+body {
+  background-image: url("./harel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
