@@ -1,5 +1,5 @@
 header {
-  // background-color: #0a2a36;
+  background-color: #0a2a36;
   color: white;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@ header {
 }
 section {
   margin: 0;
-  // background-color: #0a2a36;
+  background-color: #0a2a36;
   height: 200px;
   display: flex;
   flex-wrap: wrap;
@@ -40,9 +40,6 @@ section {
       opacity: 0.5;
       font-weight: bold;
     }
-    // @media screen and (max-width: 768px) {
-    //   display: block;
-    // }
   }
   button {
     background-color: #e69d4a;
@@ -105,9 +102,4 @@ section {
       font-weight: bold;
     }
   }
-}
-body{
-  background-image: url("./harel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
