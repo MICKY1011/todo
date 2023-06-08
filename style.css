@@ -13,13 +13,13 @@ section {
   background-color: #0a2a36;
   height: 200px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   section {
-    display: block;
-    height: 100px;
+    height: 120px;
   }
 }
 section h3 {
@@ -50,17 +50,12 @@ section input[type=text]::placeholder {
   opacity: 0.5;
   font-weight: bold;
 }
-@media screen and (max-width: 768px) {
-  section input[type=text] {
-    display: block;
-  }
-}
 section button {
   background-color: #e69d4a;
   color: white;
   font-weight: bold;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 539px) {
   section button {
     padding: 0 15px 0 15px;
     width: 250px;
