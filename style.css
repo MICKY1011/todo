@@ -50,6 +50,11 @@ section input[type=text]::placeholder {
   opacity: 0.5;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  section input[type=text] {
+    display: block;
+  }
+}
 section button {
   background-color: #e69d4a;
   color: white;
@@ -58,6 +63,7 @@ section button {
 @media screen and (max-width: 768px) {
   section button {
     padding: 0 15px 0 15px;
+    width: 250px;
   }
 }
 

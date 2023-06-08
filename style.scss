@@ -40,6 +40,9 @@ section {
       opacity: 0.5;
       font-weight: bold;
     }
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
   button {
     background-color: #e69d4a;
@@ -47,6 +50,7 @@ section {
     font-weight: bold;
     @media screen and (max-width: 768px) {
       padding: 0 15px 0 15px;
+      width: 250px;
     }
   }
 }
